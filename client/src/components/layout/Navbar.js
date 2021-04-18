@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
-import { AiFillInstagram } from 'react-icons/ai';
 
 const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   const authLinks = (
@@ -47,7 +46,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i /> <AiFillInstagram />
+          <i />
           FoonYewgram
         </Link>
       </h1>
